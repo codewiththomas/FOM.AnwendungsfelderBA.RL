@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>My Docs</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="." class="nav-link active" aria-current="page">🤖 Reinforcement Learning für optimale Dienstplanung</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="installation/" class="nav-link">Installation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="mkdocs/" class="nav-link">Mkdocs</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="installation/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#reinforcement-learning-fur-optimale-dienstplanung" class="nav-link">🤖 Reinforcement Learning für optimale Dienstplanung</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#projektziele" class="nav-link">🎯 Projektziele</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#projektstruktur" class="nav-link">🏗️ Projektstruktur</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#quick-start" class="nav-link">🚀 Quick Start</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#datenstruktur" class="nav-link">📊 Datenstruktur</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#rl-environment-details" class="nav-link">🤖 RL-Environment Details</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#training-algorithmus" class="nav-link">📈 Training-Algorithmus</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#evaluation-metriken" class="nav-link">🎯 Evaluation-Metriken</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ergebnisse" class="nav-link">📊 Ergebnisse</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#erweiterte-nutzung" class="nav-link">🛠️ Erweiterte Nutzung</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#troubleshooting" class="nav-link">🔧 Troubleshooting</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#technische-details" class="nav-link">📚 Technische Details</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#roadmap" class="nav-link">🔮 Roadmap</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#contributing" class="nav-link">🤝 Contributing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#lizenz" class="nav-link">📄 Lizenz</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#support" class="nav-link">📞 Support</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="reinforcement-learning-fur-optimale-dienstplanung">🤖 Reinforcement Learning für optimale Dienstplanung</h1>
+<p>Dieses Projekt implementiert ein <strong>Single-Agent Reinforcement Learning</strong> System zur optimalen Dienstplanung im Call-Center-Umfeld. Der RL-Agent lernt, Mitarbeiter optimal zu Zeitslots zuzuweisen und dabei alle relevanten Constraints zu berücksichtigen.</p>
+<h2 id="projektziele">🎯 Projektziele</h2>
+<ul>
+<li><strong>Service Level erreichen</strong>: 80/20 Service Level (80% der Anrufe innerhalb 20 Sekunden)</li>
+<li><strong>Constraints einhalten</strong>: Arbeitszeiten, Pausen, Ruhezeiten</li>
+<li><strong>Kosten optimieren</strong>: Minimale Überbesetzung bei maximaler Effizienz</li>
+<li><strong>Flexibilität</strong>: Automatische Anpassung an Forecast-Änderungen</li>
+</ul>
+<h2 id="projektstruktur">🏗️ Projektstruktur</h2>
+<pre><code>├── data_csv/                    # CSV-Daten für Training
+│   ├── agents.csv              # Mitarbeiter-Daten
+│   ├── lines.csv               # Line-Informationen (AHT)
+│   ├── forecast.csv            # Kontakt-Forecast
+│   └── constraints.csv         # Constraint-Definitionen
+├── src/
+│   ├── environment/
+│   │   └── shift_scheduling_env.py    # Gymnasium Environment
+│   ├── models/
+│   │   └── train_agent.py             # Training mit Stable-Baselines3
+│   ├── utils/
+│   │   └── data_loader.py             # CSV-Datenverarbeitung
+│   └── evaluation/                    # Evaluation und Metriken
+├── requirements.txt            # Python-Dependencies
+├── test_environment.py        # Environment-Tests
+└── train_shift_scheduler.py   # Hauptskript für Training
+</code></pre>
+<h2 id="quick-start">🚀 Quick Start</h2>
+<h3 id="1-installation">1. Installation</h3>
+<pre><code class="language-bash"># Python Virtual Environment erstellen
+python -m venv .venv
+source .venv/bin/activate  # Windows: rl_scheduling_env\Scripts\activate
+
+# Dependencies installieren
+pip install -r requirements.txt
+</code></pre>
+<h3 id="2-environment-testen">2. Environment testen</h3>
+<pre><code class="language-bash"># Basis-Tests ohne RL-Training
+python train_shift_scheduler.py --mode test
+</code></pre>
+<h3 id="3-rl-training-starten">3. RL-Training starten</h3>
+<pre><code class="language-bash"># Schnelles Training (50k steps)
+python train_shift_scheduler.py --mode train --timesteps 50000
+
+# Vollständiges Training (200k steps)
+python train_shift_scheduler.py --mode train --timesteps 200000 --max_steps 500
+</code></pre>
+<h3 id="4-trainiertes-model-evaluieren">4. Trainiertes Model evaluieren</h3>
+<pre><code class="language-bash">python train_shift_scheduler.py --mode eval --model_path results/models/best_model
+</code></pre>
+<h2 id="datenstruktur">📊 Datenstruktur</h2>
+<h3 id="agents-agentscsv">Agents (agents.csv)</h3>
+<pre><code class="language-csv">csvId,DisplayName,Wochenstunden,Quali_Line1,Quali_Line2,Quali_Line3
+A001,Mueller_Max,40.0,True,False,False
+</code></pre>
+<h3 id="forecast-forecastcsv">Forecast (forecast.csv)</h3>
+<pre><code class="language-csv">csvDatum,Interval,Erwartete_Kontakte
+2025-06-09,07:00-07:30,12
+</code></pre>
+<h3 id="constraints-constraintscsv">Constraints (constraints.csv)</h3>
+<pre><code class="language-csv">csvID,Titel,Schweregrad,IsPositiv,Gewicht
+MIN_REST_TIME,Mindest-Ruhezeit zwischen zwei Schichten,Muss,-1,100
+</code></pre>
+<h2 id="rl-environment-details">🤖 RL-Environment Details</h2>
+<h3 id="state-space">State Space</h3>
+<ul>
+<li><strong>Schedule Matrix</strong>: Aktuelle Zuweisungen (10 Agenten × 210 Zeitslots)</li>
+<li><strong>Forecast</strong>: Erwartete Kontakte pro Zeitslot</li>
+<li><strong>Agent Verfügbarkeit</strong>: Wochenstunden und Qualifikationen</li>
+<li><strong>Constraint Status</strong>: Aktuelle Violations und Compliance</li>
+</ul>
+<h3 id="action-space">Action Space</h3>
+<ul>
+<li><strong>Discrete Actions</strong>: <code>Agent_Index * Time_Slots + Time_Slot</code></li>
+<li><strong>Toggle-Mechanismus</strong>: Zuweisen (0→1) oder Entfernen (1→0)</li>
+<li><strong>Action Space Size</strong>: 2,100 (10 Agenten × 210 Zeitslots)</li>
+</ul>
+<h3 id="reward-function">Reward Function</h3>
+<pre><code class="language-python">reward = service_level_reward + efficiency_bonus - constraint_penalties + hours_compliance
+</code></pre>
+<p><strong>Komponenten:</strong>
+- <strong>Service Level</strong>: +2.0 wenn ≥80%, -1.0 × (0.8 - level) wenn &lt;80%
+- <strong>Constraint Penalties</strong>: -0.5 pro Violation
+- <strong>Efficiency</strong>: +0.5 bei optimaler Agenten-Zuordnung
+- <strong>Hours Compliance</strong>: +0.3 bei korrekter Wochenstunden-Einhaltung</p>
+<h2 id="training-algorithmus">📈 Training-Algorithmus</h2>
+<p><strong>PPO (Proximal Policy Optimization)</strong>
+- <strong>Policy</strong>: Multi-Layer Perceptron (MLP)
+- <strong>Learning Rate</strong>: 3e-4
+- <strong>Batch Size</strong>: 64
+- <strong>Gamma</strong>: 0.99
+- <strong>Training Steps</strong>: 50k - 200k</p>
+<h3 id="training-parameter">Training-Parameter</h3>
+<pre><code class="language-python">training_params = {
+    'total_timesteps': 100000,
+    'max_steps': 300,
+    'learning_rate': 3e-4,
+    'batch_size': 64,
+    'gamma': 0.99
+}
+</code></pre>
+<h2 id="evaluation-metriken">🎯 Evaluation-Metriken</h2>
+<h3 id="primare-metriken">Primäre Metriken</h3>
+<ul>
+<li><strong>Service Level</strong>: % Zeitslots mit ausreichend Agenten</li>
+<li><strong>Constraint Violations</strong>: Anzahl verletzter Constraints</li>
+<li><strong>Hours Compliance</strong>: Einhaltung der Wochenstunden</li>
+<li><strong>Schedule Completeness</strong>: Vollständigkeit der Planung</li>
+</ul>
+<h3 id="constraint-typen">Constraint-Typen</h3>
+<ol>
+<li><strong>Muss-Constraints</strong> (Gewicht: 75-100)</li>
+<li>Mindest-/Maximal-Schichtlänge</li>
+<li>Ruhezeiten zwischen Schichten</li>
+<li>
+<p>Obligatorische Pausen</p>
+</li>
+<li>
+<p><strong>Soll-Constraints</strong> (Gewicht: 50-70)</p>
+</li>
+<li>Service Level 80/20</li>
+<li>Wochenstunden-Einhaltung</li>
+<li>
+<p>Wochenend-Abdeckung</p>
+</li>
+<li>
+<p><strong>Kann-Constraints</strong> (Gewicht: 30-40)</p>
+</li>
+<li>Kostenoptimierung</li>
+<li>Gleichmäßige Verteilung</li>
+</ol>
+<h2 id="ergebnisse">📊 Ergebnisse</h2>
+<p>Das System wird in <code>results/</code> gespeichert:</p>
+<pre><code>results/
+├── models/
+│   ├── best_model.zip          # Bestes Model während Training
+│   └── final_model.zip         # Finales trainiertes Model
+├── logs/
+│   ├── training_log.csv        # Training-Verlauf
+│   └── tensorboard/            # TensorBoard-Logs
+├── plots/
+│   └── training_results.png    # Visualisierungen
+├── evaluation_results.csv      # Evaluation-Statistiken
+└── final_schedule.csv          # Optimaler Schedule
+</code></pre>
+<h2 id="erweiterte-nutzung">🛠️ Erweiterte Nutzung</h2>
+<h3 id="custom-training">Custom Training</h3>
+<pre><code class="language-python">from src.models.train_agent import ShiftSchedulingTrainer
+
+trainer = ShiftSchedulingTrainer(data_path=&quot;data_csv&quot;)
+trainer.train_model(
+    total_timesteps=100000,
+    learning_rate=1e-3,
+    batch_size=128
+)
+</code></pre>
+<h3 id="environment-anpassungen">Environment Anpassungen</h3>
+<pre><code class="language-python">from src.environment.shift_scheduling_env import ShiftSchedulingEnv
+
+env = ShiftSchedulingEnv(
+    data_path=&quot;custom_data/&quot;,
+    max_steps=500
+)
+</code></pre>
+<h2 id="troubleshooting">🔧 Troubleshooting</h2>
+<h3 id="haufige-probleme">Häufige Probleme</h3>
+<ol>
+<li>
+<p><strong>Import-Fehler</strong>
+   <code>bash
+   pip install -r requirements.txt</code></p>
+</li>
+<li>
+<p><strong>CSV-Dateien fehlen</strong></p>
+</li>
+<li>Prüfen Sie den <code>data_csv/</code> Ordner</li>
+<li>
+<p>Stellen Sie sicher, dass alle 4 CSV-Dateien vorhanden sind</p>
+</li>
+<li>
+<p><strong>GPU/CPU Performance</strong>
+   <code>python
+   # Für CPU-only Training
+   import torch
+   torch.device('cpu')</code></p>
+</li>
+<li>
+<p><strong>Memory Issues</strong></p>
+</li>
+<li>Reduzieren Sie <code>max_steps</code> Parameter</li>
+<li>Verwenden Sie kleinere <code>batch_size</code></li>
+</ol>
+<h3 id="debug-modus">Debug-Modus</h3>
+<pre><code class="language-bash"># Ausführliche Logs
+python train_shift_scheduler.py --mode train --timesteps 10000 --verbose 2
+
+# Environment-Details
+python test_environment.py
+</code></pre>
+<h2 id="technische-details">📚 Technische Details</h2>
+<h3 id="dependencies">Dependencies</h3>
+<ul>
+<li><strong>stable-baselines3</strong>: RL-Algorithmen</li>
+<li><strong>gymnasium</strong>: Environment-Framework</li>
+<li><strong>pandas/numpy</strong>: Datenverarbeitung</li>
+<li><strong>matplotlib/seaborn</strong>: Visualisierung</li>
+<li><strong>torch</strong>: Deep Learning Backend</li>
+</ul>
+<h3 id="performance">Performance</h3>
+<ul>
+<li><strong>Training Zeit</strong>: 30-60 Min (50k steps)</li>
+<li><strong>Memory Usage</strong>: ~1-2 GB RAM</li>
+<li><strong>GPU</strong>: Optional, aber empfohlen für &gt;100k steps</li>
+</ul>
+<h2 id="roadmap">🔮 Roadmap</h2>
+<h3 id="geplante-features">Geplante Features</h3>
+<ul>
+<li>[ ] <strong>Multi-Agent RL</strong>: Jeder Agent als eigenständiger RL-Agent</li>
+<li>[ ] <strong>Hierarchical RL</strong>: Schicht-Level und Agent-Level Entscheidungen</li>
+<li>[ ] <strong>Transfer Learning</strong>: Pre-trained Models für neue Szenarien</li>
+<li>[ ] <strong>Real-time Adaptation</strong>: Online-Learning bei Forecast-Änderungen</li>
+<li>[ ] <strong>Advanced Constraints</strong>: Qualifikations-Matching, Teamwork</li>
+<li>[ ] <strong>Web Interface</strong>: Dashboard für Schedule-Visualisierung</li>
+</ul>
+<h3 id="algorithmus-verbesserungen">Algorithmus-Verbesserungen</h3>
+<ul>
+<li>[ ] <strong>SAC</strong>: Soft Actor-Critic für bessere Exploration</li>
+<li>[ ] <strong>Rainbow DQN</strong>: Erweiterte DQN-Varianten</li>
+<li>[ ] <strong>Meta-Learning</strong>: Schnelle Anpassung an neue Szenarien</li>
+</ul>
+<h2 id="contributing">🤝 Contributing</h2>
+<ol>
+<li>Fork das Repository</li>
+<li>Erstellen Sie einen Feature-Branch</li>
+<li>Implementieren Sie Ihre Änderungen</li>
+<li>Fügen Sie Tests hinzu</li>
+<li>Erstellen Sie einen Pull Request</li>
+</ol>
+<h2 id="lizenz">📄 Lizenz</h2>
+<p>Dieses Projekt steht unter der MIT-Lizenz. Siehe <code>LICENSE</code> für Details.</p>
+<h2 id="support">📞 Support</h2>
+<p>Bei Fragen oder Problemen:
+- Erstellen Sie ein Issue im Repository
+- Überprüfen Sie die Troubleshooting-Sektion
+- Kontaktieren Sie das Entwicklerteam</p>
+<hr />
+<p><strong>Hinweis</strong>: Dieses Projekt dient als Proof-of-Concept für RL-basierte Dienstplanung. Für Produktionseinsatz sind zusätzliche Validierungen und Tests erforderlich.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2025-06-09 10:47:47.270010+00:00
+-->
