@@ -1,0 +1,11 @@
+Mitarbeiter_ID,Name,Stunde_00,Stunde_01,Stunde_02,Stunde_03,Stunde_04,Stunde_05,Stunde_06,Stunde_07,Stunde_08,Stunde_09,Stunde_10,Stunde_11,Stunde_12,Stunde_13,Stunde_14,Stunde_15,Stunde_16,Stunde_17,Stunde_18,Stunde_19,Stunde_20,Stunde_21,Stunde_22,Stunde_23,Gesamtstunden,Schicht_Start,Schicht_Ende
+MA1,MA1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,6,Stunde_10,Stunde_15
+MA2,MA2,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,6,Stunde_10,Stunde_15
+MA3,MA3,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,6,Stunde_10,Stunde_15
+MA4,MA4,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,6,Stunde_10,Stunde_15
+MA5,MA5,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,6,Stunde_10,Stunde_15
+MA6,MA6,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,6,Stunde_10,Stunde_15
+MA7,MA7,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,6,Stunde_10,Stunde_15
+MA8,MA8,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,6,Stunde_10,Stunde_15
+MA9,MA9,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,6,Stunde_10,Stunde_15
+MA10,MA10,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,6,Stunde_10,Stunde_15
