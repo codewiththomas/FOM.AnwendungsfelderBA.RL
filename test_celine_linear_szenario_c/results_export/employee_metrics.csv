@@ -1,0 +1,7 @@
+employee_id,required_shifts,assigned_shifts,shift_difference,working_days,rest_days,single_shift_days,double_shift_days,avg_daily_workload,workload_std_dev,morning_shifts,afternoon_shifts,evening_shifts,utilization_rate
+MA3,5,5,0,4,2,3,1,1.25,0.43,3,1,1,100.0%
+MA4,5,5,0,4,2,3,1,1.25,0.43,0,3,2,100.0%
+MA5,5,5,0,4,2,3,1,1.25,0.43,3,1,1,100.0%
+MA2,10,6,-4,5,1,4,1,1.2,0.4,2,3,1,60.0%
+MA6,5,5,0,5,1,5,0,1.0,0.0,1,2,2,100.0%
+MA1,10,8,-2,5,1,2,3,1.6,0.49,2,4,2,80.0%

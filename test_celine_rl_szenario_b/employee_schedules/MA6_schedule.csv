@@ -1,0 +1,7 @@
+weekday,shift_morning,shift_afternoon,shift_evening
+monday,1,0,1
+tuesday,0,0,1
+wednesday,0,0,0
+thursday,1,0,1
+friday,0,0,0
+saturday,1,1,0

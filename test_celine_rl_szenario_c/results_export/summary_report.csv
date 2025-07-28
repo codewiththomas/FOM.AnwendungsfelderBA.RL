@@ -1,0 +1,46 @@
+Category,Metric,Value
+Overall,Total Required Shifts,34
+Overall,Total Assigned Shifts,34
+Overall,Perfect Match,Yes
+Daily - Monday,Required Shifts,7
+Daily - Monday,Assigned Shifts,"shift_morning      2
+shift_afternoon    2
+shift_evening      3
+dtype: int64"
+Daily - Tuesday,Required Shifts,6
+Daily - Tuesday,Assigned Shifts,"shift_morning      2
+shift_afternoon    3
+shift_evening      1
+dtype: int64"
+Daily - Wednesday,Required Shifts,6
+Daily - Wednesday,Assigned Shifts,"shift_morning      2
+shift_afternoon    3
+shift_evening      1
+dtype: int64"
+Daily - Thursday,Required Shifts,4
+Daily - Thursday,Assigned Shifts,"shift_morning      1
+shift_afternoon    1
+shift_evening      2
+dtype: int64"
+Daily - Friday,Required Shifts,5
+Daily - Friday,Assigned Shifts,"shift_morning      2
+shift_afternoon    2
+shift_evening      1
+dtype: int64"
+Daily - Saturday,Required Shifts,6
+Daily - Saturday,Assigned Shifts,"shift_morning      2
+shift_afternoon    3
+shift_evening      1
+dtype: int64"
+Employee - MA3,Required Shifts,5
+Employee - MA3,Assigned Shifts,4
+Employee - MA4,Required Shifts,5
+Employee - MA4,Assigned Shifts,5
+Employee - MA5,Required Shifts,5
+Employee - MA5,Assigned Shifts,4
+Employee - MA2,Required Shifts,10
+Employee - MA2,Assigned Shifts,8
+Employee - MA6,Required Shifts,5
+Employee - MA6,Assigned Shifts,5
+Employee - MA1,Required Shifts,10
+Employee - MA1,Assigned Shifts,8

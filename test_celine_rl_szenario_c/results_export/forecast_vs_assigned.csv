@@ -1,0 +1,7 @@
+weekday,forecast_morning,assigned_morning,diff_morning,forecast_afternoon,assigned_afternoon,diff_afternoon,forecast_evening,assigned_evening,diff_evening
+monday,2,2,0,2,2,0,3,3,0
+tuesday,2,2,0,3,3,0,1,1,0
+wednesday,2,2,0,3,3,0,1,1,0
+thursday,1,1,0,1,1,0,2,2,0
+friday,2,2,0,2,2,0,1,1,0
+saturday,2,2,0,3,3,0,1,1,0

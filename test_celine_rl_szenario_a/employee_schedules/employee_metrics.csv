@@ -1,0 +1,7 @@
+employee_id,total_shifts_assigned,capacity,utilization_rate,shift_difference
+MA1,8,10,0.8,2
+MA2,8,10,0.8,2
+MA3,5,5,1.0,0
+MA4,5,5,1.0,0
+MA5,5,5,1.0,0
+MA6,5,5,1.0,0

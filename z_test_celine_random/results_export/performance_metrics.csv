@@ -1,0 +1,22 @@
+metric,value,description
+Total Shifts Required,40,Total number of shifts needed according to forecast
+Total Shifts Assigned,40,Total number of shifts assigned to employees
+Coverage Rate,100.0%,Percentage of required shifts that are covered
+MA1 Shifts Required,10,Number of shifts required for MA1
+MA1 Shifts Assigned,10,Number of shifts assigned to MA1
+MA1 Working Days,6,Number of days MA1 works
+MA2 Shifts Required,10,Number of shifts required for MA2
+MA2 Shifts Assigned,10,Number of shifts assigned to MA2
+MA2 Working Days,6,Number of days MA2 works
+MA3 Shifts Required,5,Number of shifts required for MA3
+MA3 Shifts Assigned,5,Number of shifts assigned to MA3
+MA3 Working Days,4,Number of days MA3 works
+MA4 Shifts Required,5,Number of shifts required for MA4
+MA4 Shifts Assigned,5,Number of shifts assigned to MA4
+MA4 Working Days,3,Number of days MA4 works
+MA5 Shifts Required,5,Number of shifts required for MA5
+MA5 Shifts Assigned,5,Number of shifts assigned to MA5
+MA5 Working Days,5,Number of days MA5 works
+MA6 Shifts Required,5,Number of shifts required for MA6
+MA6 Shifts Assigned,5,Number of shifts assigned to MA6
+MA6 Working Days,4,Number of days MA6 works
