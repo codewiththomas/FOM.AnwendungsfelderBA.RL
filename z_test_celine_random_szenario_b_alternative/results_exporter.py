@@ -446,7 +446,7 @@ class ResultsExporter:
 def main():
     # File paths
     base_dir = Path(__file__).parent.parent
-    forecast_file = base_dir / "data" / "notused_forecast.csv"
+    forecast_file = base_dir / "data" / "forecast_szenario_b_alternative.csv"
     employees_file = base_dir / "data" / "employees.csv"
     schedules_dir = Path(__file__).parent / "employee_schedules"
     output_dir = Path(__file__).parent / "results_export"
