@@ -1,0 +1,12 @@
+## 6.5 Analyse der Lernkonvergenz
+
+Die Analyse des Trainingsverlaufs über 1.000 Episoden hinweg zeigt charakteristische Muster der Q-Learning-Konvergenz. Das Training in Szenario B Alternative demonstriert die theoretisch erwartete Lernkurve eines erfolgreichen Reinforcement Learning-Prozesses mit drei distinkten Phasen.
+
+Wie in Abbildung 6.5.1 dargestellt, dominiert in den ersten 300 Episoden (rot hinterlegter Bereich) erwartungsgemäß die Exploration, was zu volatilen Reward-Werten zwischen 800 und 1.000 Punkten führt. Die hellblaue Linie zeigt die einzelnen Episode-Rewards, während die dunkelblaue Linie den gleitenden Durchschnitt über 100 Episoden darstellt. In der Stabilisierungsphase (orange, Episode 300-600) beginnt sich das Lernverhalten zu konsolidieren und die Variabilität der Rewards nimmt ab. Ab Episode 600 (grün hinterlegter Bereich) tritt die Konvergenzphase ein, wobei der Reward einen asymptotischen Verlauf zu einem finalen Durchschnittswert von 964,2 Punkten zeigt.
+
+![Abbildung 6.5.1: Lernkonvergenz des RL-Agenten](simple_convergence_szenario_b_alternative.png)
+*Abbildung 6.5.1: Trainingsverlauf über 1.000 Episoden mit den drei charakteristischen Lernphasen: Exploration (rot), Stabilisierung (orange) und Konvergenz (grün). Der gleitende Durchschnitt (dunkelblaue Linie) zeigt die kontinuierliche Verbesserung der Performance.*
+
+Die Konvergenzanalyse verdeutlicht die progressive Verbesserung der Planungsqualität während des Trainings. Besonders bemerkenswert ist die Reduktion der Standardabweichung von 35,37 auf 34,62 Punkte (2,1% Verbesserung), die eine zunehmende Konsistenz der generierten Pläne anzeigt. Nach 1.000 Episoden erreicht das Modell eine stabile Performance von 96,4% der maximal erreichten Reward-Rate von 1.045 Punkten, wobei weitere Trainingsepisoden nur noch marginale Verbesserungen erzielen würden.
+
+Diese Erkenntnisse bestätigen die theoretischen Erwartungen an Q-Learning-Algorithmen und demonstrieren das Potenzial von Reinforcement Learning für die praktische Schichtplanung. Die erfolgreiche Konvergenz zeigt, dass bei angemessener Problemmodellierung und Belohnungsstruktur eine effektive Optimierung der Personalplanung erreicht werden kann.
